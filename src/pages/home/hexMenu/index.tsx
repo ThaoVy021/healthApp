@@ -1,5 +1,5 @@
-import utensilsPng from "../../assets/icons/グループ 11.png"
-import coffeePng from "../../assets/icons/グループ 23.png"
+import utensilsPng from "../../../assets/icons/グループ 11.png"
+import coffeePng from "../../../assets/icons/グループ 23.png"
 
 function HexBadge({ label, iconSrc }: { label: string; iconSrc: string }) {
   const w = 134

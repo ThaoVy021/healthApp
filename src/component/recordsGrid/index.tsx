@@ -1,5 +1,5 @@
 import Button from "../button"
-import imageScroll from "../../assets/icons/component_scroll.png"
+import ButtonScroll from "../buttonScroll"
 
 type RecordItem = {
   src: string
@@ -26,9 +26,7 @@ export default function RecordsGrid({ items }: { items: RecordItem[] }) {
             </figcaption>
           </figure>
         ))}
-        <div className="absolute right-[-60px] top-[35%] ">
-          <img src={imageScroll} />
-        </div>
+        <ButtonScroll customPosition="right-[-60px] top-[35%]" />
       </div>
 
       <div className="flex justify-center pt-5 pb-16">
