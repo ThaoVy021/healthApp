@@ -1,0 +1,55 @@
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+  background-color: white;
+}
+
+.layout-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.ant-layout-footer {
+  padding: 0;
+}
+
+.single-image {
+  width: 100% !important;
+}
+
+li.ant-menu-item {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-ant-menu {
+  .ant-menu-submenu,
+  .ant-menu-submenu-title {
+    @apply whitespace-normal overflow-visible;
+  }
+
+  .ant-menu-item {
+    @apply whitespace-normal text-white uppercase overflow-visible !mx-auto transition-colors rounded-[100px] select-none border-none;
+
+    &-selected {
+      @apply text-primary bg-transparent border-b md:border-none;
+    }
+
+    &-active {
+      @apply text-primary bg-transparent;
+    }
+
+    &:active {
+      @apply bg-transparent !important;
+    }
+
+    &:not(&-selected):hover {
+      @apply text-primary;
+    }
+  }
+}
